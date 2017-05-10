@@ -1,7 +1,11 @@
-﻿Alter TABLE Comments ADD Column species varchar(32) --political correctness
+﻿USE CommentsDb;
 GO
 
-INSERT INTO Comments (author, text, species)
-VALUES
+
+Alter TABLE Comments ADD species varchar(32) NOT NULL DEFAULT 'whale'--political correctness
+GO
+
+INSERT INTO Comments (author, text, species) VALUES
+('same', 'i am a whale', 'whale'),
 ('Someone else','and I''m something else.', 'octopus')
 GO

@@ -10,6 +10,8 @@ services:
         image: "microsoft/mssql-server-linux:ctp1-3"
         volumes: 
             - "/home/vin/aqvolume:/var/opt/mssql"
+        ports:
+            - "1433:1433"
         environment:
             SA_PASSWORD: "Luis9000"
             ACCEPT_EULA: "Y"
