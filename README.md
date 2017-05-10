@@ -1,2 +1,2 @@
-# dockercon-demo
-Demos for DockerCon
+# OSCon!
+Demos for OSCon
